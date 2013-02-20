@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<mule-configuration xmlns="http://www.mulesoft.com/tooling/messageflow" name="test-git-new">
+    <flow SubFlow="false" name="test-git-newFlow1" entity-id="1f084206-29fa-4a6f-a85a-99072b4b214e">
+        <lane isChoiceOtherwiseLane="false" index="0" hadOnlyOneElement="false" entity-id="550f005d-9553-49c2-8729-0126b4cbb9ae">
+            <graphicalData height="0" width="0" y="0" x="0"/>
+            <endpoint message-exchange-pattern="RequestResponse" direction="Inbound" type="http://www.mulesoft.org/schema/mule/https/endpoint" name="HTTP" entity-id="53dcdd8d-0c1d-4de4-b858-8ccbf941f5c7">
+                <graphicalData height="170" width="68" y="142" x="19"/>
+                <properties>
+                    <property value="request-response" name="exchange-pattern"/>
+                </properties>
+            </endpoint>
+            <pattern type="http://www.mulesoft.org/schema/mule/core/echo-component" name="Echo" entity-id="db611907-669f-44bb-b7d8-b1db7753b405">
+                <graphicalData height="0" width="0" y="0" x="0"/>
+            </pattern>
+        </lane>
+    </flow>
+    <description></description>
+</mule-configuration>
